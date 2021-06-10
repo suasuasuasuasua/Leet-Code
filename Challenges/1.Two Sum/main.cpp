@@ -1,8 +1,9 @@
 /*
-    Runtime - 1240 ms
-    Memory - 10MB
-*/
-
+ * Given an array of integers and a target number, return the indicies of the two numbers that would add up to the target
+ *
+ * Runtime: 1240ms
+ * Memory : 10MB
+ */
 #include <iostream>
 #include <vector>
 
