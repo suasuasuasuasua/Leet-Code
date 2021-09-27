@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/justinhoang/Documents/Leet-Code/Challenges/929.Unique-Email-Addresses/main.cpp
+iostream
+-
+vector
+-
+string
+-
+unordered_set
+-
+
