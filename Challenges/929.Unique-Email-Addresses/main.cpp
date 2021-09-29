@@ -31,11 +31,22 @@ public:
         int count = emailList.size();
         return count;
     }
+    void printEmails(vector<string>& emails) {
+        cout << "Emails: ";
+        for (auto& email : emails) cout << email << ", ";
+        cout << endl;
+    }
 };
 
 int main() {
     Solution solution;
-    vector<string>emails = {"test.email+alex@leetcode.com","test.email.leet+alex@code.com"};
-    cout << solution.numUniqueEmails(emails) << endl;
+    vector<string>emails1 = {"test.email+alex@leetcode.com","test.email.leet+alex@code.com"};
+    vector<string>emails2 = {"test.email+alex@leetcode.com","test.e.mail+bob.cathy@leetcode.com","testemail+david@lee.tcode.com"};
+
+    solution.printEmails(emails1);
+    cout << "Unique Emails: " << solution.numUniqueEmails(emails1) << endl << endl;
+    solution.printEmails(emails2);
+    cout << "Unique Emails: " << solution.numUniqueEmails(emails2) << endl << endl;
+
     return 0;
 }
